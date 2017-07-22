@@ -23,7 +23,7 @@ class App extends Component{
 					</Button>
 					
 				</Div>
-				
+
 				<Div>	
 					<Button>
 						<Image
@@ -87,8 +87,8 @@ class App extends Component{
 
 const styles = {
 	imageStyle: {
-		width: 250,
-		height: 250
+		width: 300,
+		height: 300
 	}
 };
 
