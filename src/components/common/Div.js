@@ -12,7 +12,6 @@ const Div = (props) => {
 const styles = {
 	containerStyle: {
 		padding: 3,
-		backgroundColor: '#fff',
 		justifyContent: 'flex-start',
 		flexDirection: 'row',
 		position: 'relative'
