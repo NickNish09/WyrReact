@@ -28,9 +28,9 @@ const styles = {
 		backgroundColor: '#fff',
 		borderRadius: 5,
 		borderWidth: 3,
-		borderColor: '#7ca2b2',
+		borderColor: '#0c1d38',
 		marginLeft: 5,
-		marginRight: 5
+		marginRight: 0
 	}
 };
 
