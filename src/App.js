@@ -1,95 +1,25 @@
 import React, {Component} from 'react';
 import { ScrollView, Text, Image } from 'react-native';
 import { Header, CardSection, Div, Button } from './components/common';
+import RouterComponent from './Router';
+import Categorias from './components/Categorias';
+import Menu from './components/Menu';
+//import { Provider } from 'react-redux';
+//import { createStore, applyMiddleware } from 'redux';
+//import ReduxThunk from 'redux-thunk';
+import { Actions } from 'react-native-router-flux';
 
 class App extends Component{
-	
+	onButtonPress(){
+		Actions.categorias();
+	}
 	render(){
-		return (
-			<ScrollView style={{flex: 1}}>
-				<Header headerText="Categorias" />
-				<Div>	
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://charivari.pt/wp-content/uploads/2014/12/A-morte-do-Clip-Art-pela-Microsoft.jpg'}}
-						/>
-					</Button>
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://www.clker.com/cliparts/O/r/C/H/P/j/hamburguer-hi.png'}}
-						/>
-					</Button>
-					
-				</Div>
-
-				<Div>	
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://charivari.pt/wp-content/uploads/2014/12/A-morte-do-Clip-Art-pela-Microsoft.jpg'}}
-						/>
-					</Button>
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://www.clker.com/cliparts/O/r/C/H/P/j/hamburguer-hi.png'}}
-						/>
-					</Button>
-				</Div>
-				<Div>	
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://charivari.pt/wp-content/uploads/2014/12/A-morte-do-Clip-Art-pela-Microsoft.jpg'}}
-						/>
-					</Button>
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://www.clker.com/cliparts/O/r/C/H/P/j/hamburguer-hi.png'}}
-						/>
-					</Button>
-				</Div>
-				<Div>	
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://charivari.pt/wp-content/uploads/2014/12/A-morte-do-Clip-Art-pela-Microsoft.jpg'}}
-						/>
-					</Button>
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://www.clker.com/cliparts/O/r/C/H/P/j/hamburguer-hi.png'}}
-						/>
-					</Button>
-				</Div>
-				<Div>	
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://charivari.pt/wp-content/uploads/2014/12/A-morte-do-Clip-Art-pela-Microsoft.jpg'}}
-						/>
-					</Button>
-					<Button>
-						<Image
-							style={styles.imageStyle}
-							source={{uri: 'http://www.clker.com/cliparts/O/r/C/H/P/j/hamburguer-hi.png'}}
-						/>
-					</Button>
-				</Div>
-			</ScrollView>
+		//const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+		
+		return(
+			<RouterComponent />
 		);
-	}
-}
-
-const styles = {
-	imageStyle: {
-		width: 300,
-		height: 300
-	}
+	}	
 };
 
 export default App;
