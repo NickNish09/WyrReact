@@ -29,7 +29,7 @@ const styles = {
 		borderRadius: 5,
 		borderWidth: 3,
 		borderColor: '#0c1d38',
-		marginLeft: 5,
+		marginLeft: 4,
 		marginRight: 0
 	}
 };
