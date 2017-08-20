@@ -5,8 +5,8 @@ import Button from 'apsl-react-native-button'
 import { Actions } from 'react-native-router-flux';
 
 class Menu extends Component {
-	onButtonPress(){
-		Actions.categorias();
+	onButtonPress(option){
+		Actions[option]();
 	}
 	
 	render(){
@@ -15,11 +15,20 @@ class Menu extends Component {
 			<View>
 				<Div>
 					<Button 
-					onPress={this.onButtonPress.bind(this)} 
+					onPress={(option) => this.onButtonPress('categorias')} 
 					style={buttonStyle} 
 					textStyle={textStyle}
 					>
 						Categorias
+					</Button>
+				</Div>
+				<Div>
+					<Button 
+					onPress={(option) => this.onButtonPress('favoritas')} 
+					style={buttonStyle} 
+					textStyle={textStyle}
+					>
+						Favoritas
 					</Button>
 				</Div>
 			</View>

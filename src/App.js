@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { ScrollView, Text, Image } from 'react-native';
 import { Header, CardSection, Div, Button } from './components/common';
 import RouterComponent from './Router';
-import Categorias from './components/Categorias';
+import Categorias from './components/Category';
 import Menu from './components/Menu';
 //import { Provider } from 'react-redux';
 //import { createStore, applyMiddleware } from 'redux';

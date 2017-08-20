@@ -29,7 +29,7 @@ class Categorias extends Component{
 				</Div>
 
 				<Div>	
-					<Button>
+					<Button onPress={(category) => this.onButtonPress('vida')}>
 						<Image
 							style={styles.imageStyle}
 							source={{uri: 'https://snes1990.files.wordpress.com/2011/09/1up.jpg?w=227&h=227'}}

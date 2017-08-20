@@ -4,7 +4,7 @@ import {
   View,
   Image,
 } from 'react-native';
-import {Card, CardSection, Div, Button} from './common';
+import {Card, CardSection, Div, Button} from '../common';
 
 class TelaPergunta extends Component {
 	
@@ -36,7 +36,7 @@ class TelaPergunta extends Component {
 				<Div>
 					<Button >
 						<Image style={btnStyle}
-						source={require('../img/idea.png')}
+						source={require('../../img/idea.png')}
 						/>
 					</Button>
 				</Div>
