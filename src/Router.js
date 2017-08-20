@@ -6,6 +6,7 @@ import Favoritas from './components/Favoritas';
 import Mortes from './components/Categorias/Mortes';
 import Comidas from './components/Categorias/Comidas';
 import Vida from './components/Categorias/Vida';
+import Achievements from './components/Achievements';
 
 const RouterComponent = () => {
 	return(
@@ -17,6 +18,7 @@ const RouterComponent = () => {
 				<Scene key="mortes" component={Mortes} title="Categoria Mortes" />
 				<Scene key="comidas" component={Comidas} title="Categoria Comidas" />
 				<Scene key="vida" component={Vida} title="Categoria Vida" />
+				<Scene key="achievements" component={Achievements} title="Achievements" />
 			</Scene>
 		</Router>
 	);

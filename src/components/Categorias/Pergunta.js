@@ -4,7 +4,8 @@ import {
   View,
   Image,
 } from 'react-native';
-import {Card, CardSection, Div, Button} from '../common';
+import {Card, CardSection, Div} from '../common';
+import Button from 'apsl-react-native-button'
 
 class TelaPergunta extends Component {
 	
@@ -13,25 +14,25 @@ class TelaPergunta extends Component {
 	}
 
 	render(){
-	const { textStyle, btnStyle } = styles;
+	const { textStyle, btnStyle, btnRed, btnBlue, btnDeBoa } = styles;
 		return(
 			<Card>
 				<CardSection>
 					<Text style={textStyle}>Descrição da Pergunta</Text>
 				</CardSection>
 				<CardSection>
-					<Button>
+					<Button style={btnRed}>
 						Opção 1
 					</Button>
 				</CardSection>
 				<CardSection>
-					<Button>
+					<Button style={btnBlue}>
 						Opção 2
 					</Button>
 				</CardSection>
 				
 				<CardSection>
-					<Button> To de Boa </Button>
+					<Button style={btnDeBoa}> To de Boa </Button>
 				</CardSection>
 				<Div>
 					<Button >
@@ -53,8 +54,20 @@ const styles = {
 		flex: 1
 	},
 	btnStyle : {
-		height: 114,
-		width: 114
+		height: 54,
+		width: 54
+	},
+	btnRed : {
+		backgroundColor: 'red',
+		flex: 1
+	},
+	btnBlue :{
+		backgroundColor: 'blue',
+		flex: 1
+	},
+	btnDeBoa :{
+		backgroundColor: 'green',
+		flex: 1
 	}
 };
 
